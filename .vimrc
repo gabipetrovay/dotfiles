@@ -7,12 +7,15 @@ set splitbelow
 set bs=2
 language en_US
 
-" tabs and indentation
+" default tabs and indentation options
 set autoindent
 set smarttab
 set shiftwidth=4
 set tabstop=4
+set softtabstop=4
 set expandtab
+" extension based indentation options
+autocmd FileType sh :setlocal sw=2 ts=2 sts=2 " Two spaces for bash files
 
 " status line
 set statusline=%t       "tail of the filename
